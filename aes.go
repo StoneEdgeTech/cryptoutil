@@ -4,8 +4,6 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
-
-	//"github.com/gorilla/mux"
 )
 
 func lookupOauthToken() {
