@@ -4,6 +4,7 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
+	"encoding/base64"
 )
 
 func lookupOauthToken() {
@@ -19,7 +20,7 @@ func AESEncrypt(key, text []byte) ([]byte, error) {
 	return _AESEncrypt(key, text, makeIV())
 }
 
-func _AESEncrypt(key, text []byte, iv []byte) ([]byte, error) {
+func _AESEncrypt(key, text, iv []byte) ([]byte, error) {
 	block, err := aes.NewCipher(key)
 	if err != nil {
 		return []byte{}, err
@@ -42,4 +43,24 @@ func AESDecrypt(key, ciphertext []byte) (string, error) {
 	decrypted := make([]byte, len(ciphertext))
 	decripter.XORKeyStream(decrypted, ciphertext)
 	return string(decrypted), nil
+}
+
+func _B64AESEncrypt(key, text, iv []byte) (string, error) {
+	encryptedBytes, err := _AESEncrypt(key, text, iv)
+	if err != nil {
+		return "", err
+	}
+	return base64.StdEncoding.EncodeToString(encryptedBytes), nil
+}
+
+func B64AESEncrypt(key, text []byte) (string, error) {
+	return _B64AESEncrypt(key, text, makeIV())
+}
+
+func B64AESDecrypt(key []byte, b64Ciphertext string) (string, error) {
+	rawEncrypted, err := base64.StdEncoding.DecodeString(b64Ciphertext)
+	if err != nil {
+		return "", err
+	}
+	return AESDecrypt(key, rawEncrypted)
 }

@@ -10,9 +10,6 @@ import (
 func TestBigCommerce(t *testing.T) {
 	g := Goblin(t)
 	RegisterFailHandler(func(m string, _ ...int) { g.Fail(m) })
-	g.Describe("Authentication", func() {
-		g.It("should look up authentication", func() {})
-	})
 	g.Describe("Cryptography", func() {
 		g.It("should generate random initialization vector", func() {
 			iv := makeIV()
@@ -36,6 +33,22 @@ func TestBigCommerce(t *testing.T) {
 				60, 187, 164, 154, 208, 202, 12, 73, 118, 192,
 				13, 14, 12, 216, 10, 161, 44, 183, 157, 30, 28}
 			decrypted, err := AESDecrypt([]byte(key), encrypted)
+			Expect(err).NotTo(HaveOccurred())
+			Expect(decrypted).To(Equal("this is the plaintext"))
+		})
+		g.It("should encrypt a string to base64 with a given key", func() {
+			iv := []byte{255, 137, 197, 214, 116, 165, 208, 214, 167, 19, 82, 250, 13, 192, 62, 145}
+			key := "this is a key which is exactly sixteen bytes long"[:16]
+			plaintext := "this is the plaintext"
+			encrypted, err := _B64AESEncrypt([]byte(key), []byte(plaintext), iv)
+			Expect(err).NotTo(HaveOccurred())
+			expected := "/4nF1nSl0NanE1L6DcA+kTy7pJrQygxJdsANDgzYCqEst50eHA=="
+			Expect(encrypted).To(Equal(expected))
+		})
+		g.It("should decrypt a base64 string with a given key", func() {
+			key := "this is a key which is exactly sixteen bytes long"[:16]
+			encrypted := "/4nF1nSl0NanE1L6DcA+kTy7pJrQygxJdsANDgzYCqEst50eHA=="
+			decrypted, err := B64AESDecrypt([]byte(key), encrypted)
 			Expect(err).NotTo(HaveOccurred())
 			Expect(decrypted).To(Equal("this is the plaintext"))
 		})
