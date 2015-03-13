@@ -1,0 +1,16 @@
+{
+	"ImportPath": "github.com/monsooncommerce/cryptoutil",
+	"GoVersion": "go1.4",
+	"Deps": [
+		{
+			"ImportPath": "github.com/franela/goblin",
+			"Comment": "0.0.1-48-g23dfc38",
+			"Rev": "23dfc38385c69b12cb04a1b8df00314a4e662ed9"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		}
+	]
+}
