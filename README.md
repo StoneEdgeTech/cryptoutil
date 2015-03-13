@@ -12,3 +12,13 @@ cypherTextAsByteSlice, err := cryptoutil.AESEncrypt([]byte(key), []byte(plaintex
 // initialization vector (iv). The iv must be unique but not secure
 decryptedPlainTextAsString, err := cryptoutil.AESDecrypt([]byte(key), encrypted)
 ```
+
+```go
+// encrypt your plaintext as above, but wrap the []byte as a base64-encoded string
+base64CypherText, err := B64AESEncrypt([]byte(key), []byte(plaintext))
+```
+
+```go
+// decrypt a base64-encoded cyphertext string as above
+decryptedPlainTextAsString, err := B64AESDecrypt([]byte(key), base64CypherText)
+```
