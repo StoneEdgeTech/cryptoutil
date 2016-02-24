@@ -1,6 +1,6 @@
 {
-	"ImportPath": "github.com/monsooncommerce/cryptoutil",
-	"GoVersion": "go1.4",
+	"ImportPath": "github.com/stoneedgetech/cryptoutil",
+	"GoVersion": "go1.5",
 	"Deps": [
 		{
 			"ImportPath": "github.com/franela/goblin",
@@ -9,6 +9,56 @@
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/format",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/internal/assertion",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/internal/asyncassertion",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/internal/testingtsupport",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/matchers",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/matchers/support/goraph/bipartitegraph",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/matchers/support/goraph/edge",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/matchers/support/goraph/node",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/matchers/support/goraph/util",
+			"Comment": "v1.0-22-g91ddcd2",
+			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega/types",
 			"Comment": "v1.0-22-g91ddcd2",
 			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
 		}
