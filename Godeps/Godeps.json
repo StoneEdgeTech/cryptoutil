@@ -4,63 +4,63 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/franela/goblin",
-			"Comment": "0.0.1-48-g23dfc38",
-			"Rev": "23dfc38385c69b12cb04a1b8df00314a4e662ed9"
+			"Comment": "0.0.1-58-gac712d3",
+			"Rev": "ac712d36d1b123f786cbedcfa19b5d25697a14cc"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/format",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/internal/assertion",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/internal/asyncassertion",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/internal/testingtsupport",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/matchers",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/matchers/support/goraph/bipartitegraph",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/matchers/support/goraph/edge",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/matchers/support/goraph/node",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/matchers/support/goraph/util",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		},
 		{
 			"ImportPath": "github.com/onsi/gomega/types",
-			"Comment": "v1.0-22-g91ddcd2",
-			"Rev": "91ddcd2375dd05fecea5eabf7a8f86332de756f4"
+			"Comment": "v1.0-71-g2152b45",
+			"Rev": "2152b45fa28a361beba9aab0885972323a444e28"
 		}
 	]
 }
